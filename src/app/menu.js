@@ -9,9 +9,9 @@ const menuPage = (() => {
   const wrapper = document.createElement('div');
   wrapper.classList.add('container');
   const h1 = document.createElement('h1');
-  h1.textContent = 'Album example';
+  h1.textContent = 'Checkout Our Menu';
   const p = document.createElement('p');
-  p.classList.add('lead', 'text-muted');
+  p.classList.add('lead', 'text-dark');
   p.textContent = 'Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely';
   wrapper.appendChild(h1);
   wrapper.appendChild(p);

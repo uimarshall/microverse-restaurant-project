@@ -23,7 +23,7 @@ of foodfun.`;
   const link = document.createElement('a');
   bannerParagraphLink.appendChild(link);
   copy.appendChild(bannerParagraphLink);
-
+  
   carousel.innerHTML = `<ol class="carousel-indicators">
 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -41,7 +41,7 @@ of foodfun.`;
 					dolor id nibh ultricies vehicula ut id elit.
 				</p>
 				<p>
-					<a class="btn btn-lg btn-primary" href="#" role="button"
+					<a class="btn btn-lg btn-primary browse-menu" href="#" role="button"
 						>Browse Menu</a
 					>
 				</p>
@@ -59,7 +59,7 @@ of foodfun.`;
 					dolor id nibh ultricies vehicula ut id elit.
 				</p>
 				<p>
-					<a class="btn btn-lg btn-primary" href="#" role="button"
+					<a class="btn btn-lg btn-primary browse-menu" href="#" role="button"
 						>Browse menu</a
 					>
 				</p>
@@ -77,7 +77,7 @@ of foodfun.`;
 					dolor id nibh ultricies vehicula ut id elit.
 				</p>
 				<p>
-					<a class="btn btn-lg btn-primary" href="#" role="button"
+					<a class="btn btn-lg btn-primary browse-menu" href="#" role="button"
 						>Browse menu</a
 					>
 				</p>
@@ -108,5 +108,8 @@ of foodfun.`;
 
   pageContent.appendChild(main);
 });
+
+
+
 
 export { homePage };

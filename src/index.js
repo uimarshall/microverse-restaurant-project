@@ -1,13 +1,13 @@
 import './main.scss';
 
 import './app/alertService';
-import { render } from './app/componentService';
 import { pageLoad, nav, pageContent } from './app/app';
 import { homePage } from './app/home';
 import { menuPage } from './app/menu';
+import { contactPage } from './app/contact';
 
 homePage();
-// menuPage();
+
 
 const navLinks = document.querySelectorAll('.nav-link');
 
@@ -18,9 +18,9 @@ nav.addEventListener('click', (event) => {
   } else if (event.target.innerText === 'menu') {
     menuPage();
   }
-  // else if(event.target.innerText === 'contact'){
-  //     loadContact();
-  // }
+  else if(event.target.innerText === 'contact'){
+      contactPage();
+  }
   // navLinks.forEach(link => {
   //     if(link.classList.contains('active')){
   //         link.classList.remove('active')
@@ -29,5 +29,6 @@ nav.addEventListener('click', (event) => {
   // console.log(event.target);
   // event.target.classList.add('active');
 });
+
 
 // render();

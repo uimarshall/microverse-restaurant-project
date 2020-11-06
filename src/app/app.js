@@ -1,3 +1,4 @@
+
 let doc;
 doc = document;
 doc = document.head;
@@ -24,7 +25,8 @@ const loadPage = (() => {
   nav.classList.add('navbar', 'navbar-expand-md', 'navbar-dark', 'fixed-top', 'bg-dark');
   const brand = document.createElement('a');
   brand.classList.add('navbar-brand');
-  brand.setAttribute('href', '#');
+  brand.setAttribute('href', 'index.html');
+  
   brand.textContent = 'BeckNCall';
 
   const ul = document.createElement('ul');
