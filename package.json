@@ -9,7 +9,7 @@
 		"build": "webpack --config webpack.prod.js",
 		"stylelint": "npx stylelint \"**/*.{css,scss}\"",
 		"lint": "npx eslint .",
-		"test": "npm run stylelint && lint",
+		"test": "npm run stylelint && npm run lint",
 		"fix": "npx stylelint --fix \"**/*.{css,scss}\"",
 		"lintfix": "npx eslint --fix ."
 	},
