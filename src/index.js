@@ -21,14 +21,14 @@ nav.addEventListener('click', (event) => {
   else if(event.target.innerText === 'contact'){
       contactPage();
   }
-  // navLinks.forEach(link => {
-  //     if(link.classList.contains('active')){
-  //         link.classList.remove('active')
-  //     }
-  // })
-  // console.log(event.target);
-  // event.target.classList.add('active');
+  navLinks.forEach(link => {
+      if(link.classList.contains('active')){
+          link.classList.remove('active')
+      }
+  })
+  
+  event.target.classList.add('active');
 });
 
 
-// render();
+

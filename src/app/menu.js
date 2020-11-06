@@ -9,6 +9,7 @@ const menuPage = (() => {
   const wrapper = document.createElement('div');
   wrapper.classList.add('container');
   const h1 = document.createElement('h1');
+  h1.classList.add('text-yellow')
   h1.textContent = 'Checkout Our Menu';
   const p = document.createElement('p');
   p.classList.add('lead', 'text-dark');

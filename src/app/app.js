@@ -1,36 +1,16 @@
 
-let doc;
-doc = document;
-doc = document.head;
-doc = document.body;
-doc = document.doctype;
-doc = document.domain;
-doc = document.documentURI;
-doc = document.URL;
-// doc = document.contentType;
-// doc = document.characterSet;
-// doc = document.links;
-// doc = document.links[0].classList;
-// doc = document.links[0].className;
-// doc = document.images;
-
-// const para = document.createElement('p');
-// para.textContent = `My url is ${doc}`;
-
-// document.body.appendChild(para);
-
 const loadPage = (() => {
   const content = document.querySelector('#content');
   const nav = document.createElement('nav');
   nav.classList.add('navbar', 'navbar-expand-md', 'navbar-dark', 'fixed-top', 'bg-dark');
   const brand = document.createElement('a');
-  brand.classList.add('navbar-brand');
+  brand.classList.add('navbar-brand', 'font-weight-bold');
   brand.setAttribute('href', 'index.html');
-  
+ 
   brand.textContent = 'BeckNCall';
 
   const ul = document.createElement('ul');
-  ul.classList.add('nav', 'nav-tabs');
+  ul.classList.add('nav', 'nav-tabs','ml-auto');
   const pages = ['home', 'menu', 'contact'];
   pages.forEach(page => {
     const list = document.createElement('li');

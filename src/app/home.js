@@ -16,7 +16,7 @@ const homePage = (() => {
   copy.appendChild(copyTitle);
 
   const bannerParagraph = document.createElement('p');
-  bannerParagraph.textContent = `THE MOST INTERESTING FOOD IN THE WORLD! Discover the sumptous aromas 
+  bannerParagraph.textContent = `THE MOST TALK ABOUT FOOD IN THE WORLD! Discover the sumptous aromas 
 of foodfun.`;
   copy.appendChild(bannerParagraph);
   const bannerParagraphLink = document.createElement('p');
@@ -34,11 +34,10 @@ of foodfun.`;
 		<img src="https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590__340.jpg" alt="guarantee" />
 		<div class="container">
 			<div class="carousel-caption">
-				<h1>Example headline.</h1>
+				<h1>THE MOST TALK ABOUT <span class="text-green">FOOD<span/> IN THE WORLD!.</h1>
 				<p>
-					Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-					Donec id elit non mi porta gravida at eget metus. Nullam id
-					dolor id nibh ultricies vehicula ut id elit.
+					Discover the <span class="text-yellow lead font-weight-bold">sumptous aromas<span/> 
+of BeckNCall foods.
 				</p>
 				<p>
 					<a class="btn btn-lg btn-primary browse-menu" href="#" role="button"
@@ -52,11 +51,10 @@ of foodfun.`;
 		<img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395__340.jpg" />
 		<div class="container">
 			<div class="carousel-caption">
-				<h1>Another example headline.</h1>
+				<h1>THE MOST TALK ABOUT <span class="text-green">FOOD<span/> IN THE WORLD!.</h1>
 				<p>
-					Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-					Donec id elit non mi porta gravida at eget metus. Nullam id
-					dolor id nibh ultricies vehicula ut id elit.
+					Discover the <span class="text-yellow lead font-weight-bold">sumptous aromas<span/> 
+of BeckNCall foods.
 				</p>
 				<p>
 					<a class="btn btn-lg btn-primary browse-menu" href="#" role="button"
@@ -70,11 +68,10 @@ of foodfun.`;
 		<img src="https://cdn.pixabay.com/photo/2017/01/07/20/41/alcohol-1961542__340.jpg" />
 		<div class="container">
 			<div class="carousel-caption">
-				<h1>One more for good measure.</h1>
+				<h1>THE MOST TALK ABOUT <span class="text-green">FOOD<span/> IN THE WORLD!.</h1>
 				<p>
-					Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-					Donec id elit non mi porta gravida at eget metus. Nullam id
-					dolor id nibh ultricies vehicula ut id elit.
+					Discover the <span class="text-yellow lead font-weight-bold">sumptous aromas<span/> 
+of BeckNCall foods.
 				</p>
 				<p>
 					<a class="btn btn-lg btn-primary browse-menu" href="#" role="button"
