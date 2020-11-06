@@ -6,11 +6,11 @@ const loadPage = (() => {
   const brand = document.createElement('a');
   brand.classList.add('navbar-brand', 'font-weight-bold');
   brand.setAttribute('href', 'index.html');
- 
+
   brand.textContent = 'BeckNCall';
 
   const ul = document.createElement('ul');
-  ul.classList.add('nav', 'nav-tabs','ml-auto');
+  ul.classList.add('nav', 'nav-tabs', 'ml-auto');
   const pages = ['home', 'menu', 'contact'];
   pages.forEach(page => {
     const list = document.createElement('li');
@@ -34,11 +34,11 @@ const loadPage = (() => {
   const footer = document.createElement('footer');
   footer.classList.add('footer', 'p-5', 'mt-auto');
   footer.innerHTML = `
-    <p class="float-right"><a href="#">Back to top</a></p>
-				<p>
-					&copy; 2017-2020 Company, Inc. &middot;
-					<a href="#">Privacy</a> &middot; <a href="#">Terms</a>
-				</p>`;
+  <p class="float-right"><a href="#">Back to top</a></p>
+  <p>
+  &copy; 2017-2020 Company, Inc. &middot;
+  <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+  </p>`;
   content.appendChild(footer);
 
 

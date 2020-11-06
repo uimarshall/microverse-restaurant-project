@@ -1,10 +1,9 @@
 import './main.scss';
 
-import './app/alertService';
-import { pageLoad, nav, pageContent } from './app/app';
-import { homePage } from './app/home';
-import { menuPage } from './app/menu';
-import { contactPage } from './app/contact';
+import { nav, pageContent } from './app/app';
+import homePage from './app/home';
+import menuPage from './app/menu';
+import contactPage from './app/contact';
 
 homePage();
 
@@ -17,18 +16,14 @@ nav.addEventListener('click', (event) => {
     homePage();
   } else if (event.target.innerText === 'menu') {
     menuPage();
-  }
-  else if(event.target.innerText === 'contact'){
-      contactPage();
+  } else if (event.target.innerText === 'contact') {
+    contactPage();
   }
   navLinks.forEach(link => {
-      if(link.classList.contains('active')){
-          link.classList.remove('active')
-      }
-  })
-  
+    if (link.classList.contains('active')) {
+      link.classList.remove('active');
+    }
+  });
+
   event.target.classList.add('active');
 });
-
-
-
