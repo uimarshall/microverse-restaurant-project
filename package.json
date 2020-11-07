@@ -4,12 +4,16 @@
 	"private": true,
 	"description": "",
 	"main": "index.js",
+	"homepage": "https://uimarshall.github.io/microverse-restaurant-project",
 	"scripts": {
 		"start": "webpack-dev-server --config webpack.dev.js --open",
 		"build": "webpack --config webpack.prod.js",
+		"clean": "rm -rf dist/*",
+		"release": "npm run clean && npm run build",
+		"deploy": "gh-pages -d dist",
 		"stylelint": "npx stylelint \"**/*.{css,scss}\"",
 		"lint": "npx eslint .",
-		"test": "npm run stylelint && lint",
+		"test": "npm run stylelint && npm run lint",
 		"fix": "npx stylelint --fix \"**/*.{css,scss}\"",
 		"lintfix": "npx eslint --fix ."
 	},
@@ -23,7 +27,7 @@
 	"bugs": {
 		"url": "https://github.com/uimarshall/webpack-config/issues"
 	},
-	"homepage": "https://github.com/uimarshall/webpack-config#readme",
+	"homepage1": "https://github.com/uimarshall/webpack-config#readme",
 	"devDependencies": {
 		"babel-eslint": "^10.1.0",
 		"css-loader": "^5.0.0",
@@ -48,6 +52,7 @@
 	"dependencies": {
 		"bootstrap": "^4.5.3",
 		"clean-webpack-plugin": "^3.0.0",
+		"gh-pages": "^3.1.0",
 		"html-webpack-plugin": "^4.5.0",
 		"mini-css-extract-plugin": "^1.2.1",
 		"webpack-merge": "^5.3.0"
